@@ -12,6 +12,7 @@ jobs:
       with:
         node-version: '12.x'
         registry-url: 'https://registry.npmjs.org'
+    - run: npm install -g @po-ui/theme-cli
     - run: npm install
     - run: po-theme build
     - run: cd dist
